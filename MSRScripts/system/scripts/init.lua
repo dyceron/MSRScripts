@@ -42,20 +42,27 @@ end
 function Init.InitScenariosBlackboardsSections()
   Game.SetScenarioBlackboardSectionID("s110_surfaceb", "s000_surface")
 end
+
 function Init.InitGameBlackboardTOC()
   Blackboard.SetDefaultPackage("Common")
-  for _FORV_3_, _FORV_4_ in pairs(Init.aBlkCharacterPackages) do
-    if _FORV_4_.aScenarioSections then
-      for _FORV_9_, _FORV_10_ in ipairs(_FORV_4_.aScenarioSections) do
-        table.insert({}, _FORV_10_)
+  
+  for L3_2, L4_2 in pairs(Init.aBlkCharacterPackages) do
+    local L5_2 = {}
+  
+    if L4_2.aScenarioSections then
+      for L9_2, L10_2 in ipairs(L4_2.aScenarioSections) do
+        table.insert(L5_2, L10_2)
       end
     end
-    for _FORV_9_, _FORV_10_ in ipairs(_FORV_4_.aSections) do
-      table.insert({}, _FORV_10_)
+    
+    for L9_2, L10_2 in ipairs(L4_2.aSections) do
+      table.insert(L5_2, L10_2)
     end
-    Blackboard.AddPackage(_FORV_3_, {})
+    
+    Blackboard.AddPackage(L3_2, L5_2)
   end
 end
+
 function Init.SetupNewGameProfileBlackboard(_ARG_0_)
   ProfileBlackboard.ResetWithExceptionList({
     "GAME",
