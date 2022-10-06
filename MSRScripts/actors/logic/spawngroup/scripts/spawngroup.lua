@@ -1,0 +1,2 @@
+function SpawnGroup.main()
+end

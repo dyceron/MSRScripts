@@ -1,0 +1,2 @@
+function ManicMinerBotHidden.main()
+end

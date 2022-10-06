@@ -1,0 +1,2 @@
+function Autoad.main()
+end

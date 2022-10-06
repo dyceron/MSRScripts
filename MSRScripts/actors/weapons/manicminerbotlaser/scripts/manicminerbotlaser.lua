@@ -1,0 +1,2 @@
+function ManicMinerBotLaser.main()
+end

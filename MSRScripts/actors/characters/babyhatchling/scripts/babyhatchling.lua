@@ -1,0 +1,2 @@
+function BabyHatchling.main()
+end
