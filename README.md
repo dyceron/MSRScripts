@@ -1,1 +1,1 @@
-# MSRScripts
+# Samus Returns Scripts
