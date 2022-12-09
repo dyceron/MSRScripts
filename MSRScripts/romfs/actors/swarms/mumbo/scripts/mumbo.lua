@@ -1,0 +1,2 @@
+function Mumbo.main()
+end
